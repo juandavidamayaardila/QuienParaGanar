@@ -1,0 +1,119 @@
+﻿<%@ Master Language="VB" CodeFile="menu.master.vb" Inherits="menu" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1"  %>
+<!DOCTYPE html >
+<html lang="es" style="background: #FFFFFF;">
+
+<head id="Head1" runat="server">
+    <title>CELUWEB</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Styles/bootstrap/dist/css/bootstrap.css" />
+    <%--<link rel="stylesheet" type="text/css" href="Styles/css/default.css" />--%>
+    <link href="Styles/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <%--<link href="Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" />--%> 
+    <link href="Styles/build/css/custom.css" rel="stylesheet">
+    <link href="Styles/sweetalert/src/sweetalert2.css" rel="Stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Styles/css/component.css" />
+    <link rel="Stylesheet" type="text/css" href="Styles/css/Styles.css" />
+    <link rel="Stylesheet" type="text/css" href="Styles/css/Catalogo.css" />
+    <link href="Styles/css/hide-column.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Datepicker/datepicker.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js" type="text/javascript"> </script>
+    <script src="https://code.highcharts.com/modules/exporting.js" type="text/javascript"></script>
+
+
+    <%--Se colocan para el funcionamiento del catalogo, desactivar si hay alguna incompatibilidad--%>
+
+    <script src="../Styles/js/bootstrap-prettyfile.js"></script>
+
+</head>
+<body class="nav-md" style="background-repeat: no-repeat; background-color: #FFFFFF; font-family: Montserrat;">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0; text-align: center; padding-top: 10px;">
+                        <img runat="server" src="Styles/images/LOGO.png" />
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <asp:Literal ID="menuHtml" runat="server"></asp:Literal>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu" style="background-image: url(../Styles/images/fondo-Header.png);">
+                    <nav class="" role="navigation">
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+                        </div>
+                        <div style="text-align: right;">
+                            <img src="Styles/images/logo-celuwebsas.png" runat="server" style="padding: 12px 12px 0;" />
+
+                            <a class="link-navbar" href="~/index.aspx" runat="server">
+                                <img src="../styles/icons/salirBarraSuperior.png" />
+                                <asp:Label runat="server" Text=" salir"></asp:Label>
+                            </a>                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <form id="form2" method="post" runat="server">
+                    <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="0">
+                        <ProgressTemplate>
+                            <script type="text/javascript">document.write("<div class='UpdateProgressBackground'><div class='UpdateProgressContent'> <img src='../Styles/images/loader1.gif' /><br /><span>Loading...</span> </div> </div>");</script>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"
+                        EnableScriptLocalization="True" AsyncPostBackTimeout="420">
+                        <Scripts>
+                            <asp:ScriptReference Path="~/Styles/bootstrap/js/bootstrap.js" />
+                            <asp:ScriptReference Path="~/Styles/js/funciones.js" />
+                            <asp:ScriptReference Path="~/Styles/build/js/custom.min.js" />
+                            <asp:ScriptReference Path="~/Styles/sweetalert/src/sweetalert2.min.js" />
+                            <asp:ScriptReference Path="~/Styles/js/Scripts.js" />
+                            <asp:ScriptReference Path="~/Styles/js/hide-column.js" />
+                            <asp:ScriptReference Path="~/Styles/Datepicker/datepicker.js" />
+                            <asp:ScriptReference Path="~/Styles/js/ScrollableGridPlugin.js" />
+                        </Scripts>
+                    </asp:ScriptManager>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+</body>
+</html>

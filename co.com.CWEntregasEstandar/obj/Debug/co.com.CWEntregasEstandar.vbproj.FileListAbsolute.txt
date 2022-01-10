@@ -1,0 +1,8 @@
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\bin\Debug\co.com.CWEntregasEstandar.dll
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\bin\Debug\co.com.CWEntregasEstandar.pdb
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\bin\Debug\co.com.CWEntregasEstandar.xml
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\obj\Debug\co.com.CWEntregasEstandar.Resources.resources
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\obj\Debug\co.com.CWEntregasEstandar.vbproj.GenerateResource.Cache
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\obj\Debug\co.com.CWEntregasEstandar.dll
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\obj\Debug\co.com.CWEntregasEstandar.xml
+C:\Users\CW-DV-JDAA\Documents\Visual Studio 2013\Projects\CeluwebStandar\co.com.CWEntregasEstandar\obj\Debug\co.com.CWEntregasEstandar.pdb

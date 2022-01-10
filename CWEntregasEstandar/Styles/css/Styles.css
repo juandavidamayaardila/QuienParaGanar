@@ -1,0 +1,353 @@
+﻿
+.imgButton {
+    background-color: Transparent;
+}
+
+.uprogLoading {
+    background-color: #CF4342;
+    color: #fff;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+    .uprogLoading img {
+        vertical-align: middle;
+        margin: 2px;
+    }
+
+.FondoModal {
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.modalPopUp {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 14px 9px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 9px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px 9px 24px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    max-height: 90%;
+    max-width: 90%;
+    background: #fff;
+    overflow: auto;
+}
+
+.closePopUp {
+    background-image: url(../../Styles/icons/close.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+    border: none;
+}
+
+.buttonPopUp {
+    border-style: none;
+    border-color: inherit;
+    /*border-width: medium;*/
+    float: right;
+    top: -7px;
+    right: -5px;
+    background-image: url('../icons/cancelar.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: Transparent;
+    width: 21px;
+    height: 21px;
+    font-size: 0px;
+}
+
+/****------------------------------------------------------------------------*/
+input.actualizar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../../Styles/icons/aceptar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.regresar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../../Styles/icons/cancelar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.iconEditar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../../Styles/icons/editar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+input.inactivo:hover {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/desactivar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+input.inactivo {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/desactivar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+input.activo:hover {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/desactivar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.activo {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/activar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.inactivo:hover {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/activar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+input.iconSubir {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/subir.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.iconBajar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/descargar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.eliminar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/borrar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+input.iconEncCondicional {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/listar.png);
+    background-repeat: no-repeat;
+    background-color: Transparent;
+}
+
+input.agregar {
+    width: 21px;
+    height: 21px;
+    border: 0;
+    background-image: url(../icons/agregar.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+/*-------------------------------------------------------------------*/
+span {
+    font-family: Montserrat;
+    /*font-weight: bold;*/
+}
+/**-----------estilos para  gridview-----------------------------------------------**/
+.gvHeader {
+    border-style: none;
+    border-color: inherit;
+    width: 100%;
+    margin: auto;
+}
+
+    .gvHeader > tbody > tr > th /** .gvHeader > thead > tr > th**/ {
+        background-color: #D45F05;
+        color: #ffffff;
+        font-size: 10px;
+        padding: 3px 2px;
+        white-space: nowrap;
+        font-weight: lighter;
+        font-family: MontserratMedium;
+        text-align: center;
+    }
+
+        .gvHeader > tbody > tr > th > a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+    .gvHeader > thead > tr > th, .gvHeader > tfoot > tr > th, .gvHeader > thead > tr > td, .gvHeader > tbody > tr > td, .gvHeader > tfoot > tr > td {
+        padding: 3px 2px;
+        border: 1px solid #e0e0e0;
+        border-top: 1px solid #DDD;
+        white-space: nowrap;
+        font-weight: lighter;
+    }
+
+    .gvHeader > tbody > tr > td {
+        font-size: 9px;
+    }
+
+    .gvHeader > tbody tr:hover {
+        background-color: #3480f24a;
+    }
+
+    .gvHeader tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .gvHeader tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+.gvHeader-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+/**----------------------------------------------------------------**/
+.navbar img {
+    max-width: 100%;
+}
+
+label {
+    font-weight: lighter;
+}
+
+.perfilProducto {
+    width: 100%;
+    margin-top: 15px;
+}
+
+    .perfilProducto > table {
+        width: 100%;
+        margin: 0;
+    }
+
+.UpdateProgressContent {
+    text-align: center;
+    z-index: 100009;
+    margin: 200px auto 0 auto;
+}
+
+.UpdateProgressBackground {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 100008;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0%;
+}
+
+.botonLogin {
+    position: absolute;
+    margin-top: 187px;
+    margin-left: 164px;
+    width: 207px;
+    height: 47px;
+    border: none;
+    background: none;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url(../images/ingresarLogin.png);
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+    border-radius: 4px;
+}
+
+.panel-heading-icon {
+    float: left;
+    margin: 0px 5px 0;
+    padding: 13px;
+    z-index: 3;
+    position: relative;
+}
+
+.link-navbar {
+    float: right;
+    color: #fff;
+    padding: 19px 5px;
+    text-decoration: none;
+    background: #e4e4e42e;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+.imagenCatalogoIcono {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.imagenListaProductoWeb {
+    height: 40px;
+    width: 40px;
+}
+
+
